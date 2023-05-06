@@ -18,9 +18,13 @@ npm start/ng serve
 Analytical charts covered
 --------------
 1.Donut-chart in d3 vs ngx-donut-chart
+
 2.grouped bar chart in d3
+
 3.bar chart in d3 vs ngx-vertical-bar
+
 4.multi-line chart in d3
+
 5.stacked -vertical bar chart using ngx-charts
 
 
