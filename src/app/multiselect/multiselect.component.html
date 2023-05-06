@@ -1,0 +1,37 @@
+<!-- <select [(ngModel)]="selectedOptions" multiple>
+  <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+  <option *ngFor="let option of options">
+    <input type="checkbox" [(ngModel)]="option.selected"> {{ option.value }}
+  </option>
+</select>
+
+<div *ngFor="let option of options">
+  <input type="checkbox" [(ngModel)]="option.selected"> {{ option.value }}
+</div> -->
+<!-- <select [(ngModel)]="selectedSources" multiple>
+  <option *ngFor="let source of sources" [value]="source">{{ source }}</option>
+</select>
+
+<ng-container *ngIf="selectedSources.length > 0">
+  <ng-container *ngFor="let link of links">
+    <ng-container *ngIf="selectedSources.includes(link.source)">
+      {{ link.source }} -> {{ link.target }}
+    </ng-container>
+  </ng-container>
+</ng-container> -->
+
+
+<br>
+<br>
+<br>
+<div *ngFor="let source of sources">
+  <input type="checkbox" [(ngModel)]="source.selected" (change)="updateSelectedSources(source)"> {{ source.value }}
+</div>
+
+<ng-container *ngIf="selectedSources.length > 0">
+  <ng-container *ngFor="let link of filteredLinks">
+    {{ link.source }} -> {{ link.target }}
+  </ng-container>
+  <br>
+  Parent link: {{ parentLink }
+</ng-container>

@@ -1,0 +1,9 @@
+<p>
+d3-v4-line works!
+</p>
+<div class="legend-container">
+  <div *ngFor="let item of legendItems" class="legend-item">
+    <div class="color-box" [style.background-color]="item.color"></div>
+    <div class="name">{{item.name}}</div>
+  </div>
+</div>

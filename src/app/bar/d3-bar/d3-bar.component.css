@@ -1,0 +1,11 @@
+/* .bar {
+  fill: red;
+} */
+
+tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  opacity: 0;
+}

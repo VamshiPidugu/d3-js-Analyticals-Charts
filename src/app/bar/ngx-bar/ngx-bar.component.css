@@ -1,0 +1,72 @@
+/* ::ng-deep .x-axis-label text:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  transform: translateY(-50%);
+}
+
+::ng-deep .x-axis-label text:after {
+  content: '${xAxisLabelArrow}';
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+
+.legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.name {
+  font-size: 14px;
+} */
+
+.legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.legend-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.name {
+  font-size: 14px;
+}

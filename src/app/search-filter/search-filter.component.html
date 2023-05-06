@@ -1,0 +1,43 @@
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search..." />
+<div class="dropdown">
+  <button
+    class="btn btn-secondary dropdown-toggle"
+    type="button"
+    data-toggle="dropdown"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    Select options
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" *ngFor="let option of filterOptions()" href="#">
+      <label>
+        <input type="checkbox" [(ngModel)]="option.checked" />
+        {{ option.label }}
+      </label>
+    </a>
+  </div>
+</div>
+
+<!-- <div ngbDropdown class="dropdown">
+  <button class="btn btn-secondary" id="dropdownMenuButton" ngbDropdownToggle>
+    Select options
+  </button>
+  <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <fa-icon [icon]="['fas', 'search']"></fa-icon>
+        </span>
+      </div>
+      <input type="text" [(ngModel)]="searchTerm" class="form-control" placeholder="Search...">
+    </div>
+    <div class="dropdown-divider"></div>
+    <a *ngFor="let option of filterOptions()" ngbDropdownItem>
+      <label>
+        <input type="checkbox" [(ngModel)]="option.checked">
+        {{ option.label }}
+      </label>
+    </a>
+  </div>
+</div> -->

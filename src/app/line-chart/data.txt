@@ -1,0 +1,34 @@
+
+https://codepen.io/zakariachowdhury/pen/JEmjwq
+https://codepen.io/k3no/pen/wzgvwb
+# Response
+{
+    "msg": "KPI details found",
+    "status": "SUCCESS",
+    "data": {
+        "start_date": "May 2022",
+        "end_date": "April 2023",
+        "kpi": [
+            {
+                "production_data": [
+                    {
+                        "location_code": 10,
+                        "location_name": "JD Auto \u2013 Manchester",
+                        "production_quantity": 100,
+                        "production_unit": "piece",
+                        "reporting_month": "December",
+                        "reporting_year": "2022"
+                    },
+                    {
+                        "location_code": 9,
+                        "location_name": "JD Auto London",
+                        "production_quantity": 1000,
+                        "production_unit": "piece",
+                        "reporting_month": "January",
+                        "reporting_year": "2023"
+                    },
+                ]
+            }
+        ]
+    }
+}

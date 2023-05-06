@@ -1,0 +1,66 @@
+<p>ngx-bar works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6oQ2zi+Yw3qB+HmvG7ULm+R9gSlU6jzU6ZJU6lNGa8nGWYcNfNckb4nxb4K5ym5Ia+5QaJplRI/45nFyK0Y28w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- <ngx-charts-bar-vertical
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="data"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [showDataLabel]="showDataLabel"
+  [roundDomains]="roundDomains"
+  (select)="onSelect($event)"
+  [barPadding]="10"
+>
+</ngx-charts-bar-vertical> -->
+<!-- <i class="fas fa-long-arrow-alt-right fa-2x"></i> -->
+<ngx-charts-bar-vertical
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="data"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [xAxisTickFormatting]="xAxisTickFormatting"
+  [showDataLabel]="showDataLabel"
+  [roundDomains]="roundDomains"
+  (select)="onSelect($event)"
+  [barPadding]="10"
+>
+</ngx-charts-bar-vertical>
+
+
+
+
+<!-- <div class="legend-container">
+  <div *ngFor="let item of legendItems" class="legend-item">
+    <div class="color-box" [style.background-color]="item.color"></div>
+    <div class="name">{{item.name}}</div>
+  </div>
+</div> -->
+
+<div class="legend-container">
+  <div class="legend-column">
+    <div *ngFor="let item of legendItems.slice(0,2)" class="legend-item">
+      <div class="color-box" [style.background-color]="item.color"></div>
+      <div class="name">{{item.name}}</div>
+    </div>
+  </div>
+  <div class="legend-column">
+    <div *ngFor="let item of legendItems.slice(2,4)" class="legend-item">
+      <div class="color-box" [style.background-color]="item.color"></div>
+      <div class="name">{{item.name}}</div>
+    </div>
+  </div>
+</div>
